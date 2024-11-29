@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Introduction au Javascript - Jour 1</title>
+
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body>
+    <h1 class="text-center py-5 bg-dark-blue text-green">Introduction au Javascript - Jour 1</h1>
+		<div class="container">
+			<section class="my-3">
+				<p class="my-3">
+					Vous allez maintenant utiliser Javascript sur une page web.
+					<br />
+					Pour cela, vous devrez écrire votre code Javascript dans le fichier script.js.
+        </p>
+        <p class="my-3">
+					<strong>Comment ce fichier est lu par votre navigateur ?</strong> Inspectez le code de la page, vous trouverez une balise
+					'script' qui importe ce fichier juste à la fin du body (bonne pratique pour ne pas ralentir le chargement de
+					la page et charger le script après les autres éléments).
+				</p>
+        <p class="my-3"></p>
+					Appuyez vous sur les
+					<a href="">slides du cours</a>
+					pour vous aider, ou directement sur la documentation,
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript MDN.</a>
+				</p>
+				<p class="my-3">
+					Pour l'ensemble de ces exercices, <strong>n'oubliez pas d'y aller étape par étape</strong> et n'hésitez pas à <strong>utiliser des
+					console.log</strong> et à regarder ce qui s'affiche dans la console du navigateur. Cela vous aidera à comprendre ce que
+					vous manipulez.
+				</p>
+			</section>
+			<h2>Selectionner et manipuler des éléments dans le DOM</h2>
+			<section class="my-3 border-bottom">
+				<p>
+					En javascript, sélectionnez le titre h1 de la page, changer sa couleur par "var(--purple)", puis remplacer le
+					texte "Introduction au Javascript" par "Mes premiers pas en Javascript"
+				</p>
+				<div class="card-tip">
+					<p>
+						Utilisez document.querySelector pour venir sélectionner la balise h1 et stocker la dans une variable
+						(const).
+					</p>
+					<p>
+						Venez ensuite manipuler cette variable pour changer le texte (innerText) et sa couleur (style et color).
+					</p>
+				</div>
+			</section>
+			<section class="my-3 border-bottom">
+				<p>
+					En javascript, sélectionnez le bouton ci-dessous, changer sa couleur de fond par par "var(--pink)", la couleur
+					du texte par "var(--dark-blue)" puis remplacer le texte "J'apprends le Javascript"
+				</p>
+				<div class="card-tip">
+					<p>
+						Utilisez document.getElementById pour venir sélectionner le bouton et stocker le dans une variable (const).
+					</p>
+					<p>
+						Venez ensuite manipuler cette variable pour changer le texte (innerText) et sa couleur (style et color) et
+						sa couleur de fond (style et backgroundColor).
+					</p>
+				</div>
+				<div id="main-button" class="btn btn-dark-blue mt-3">Cliquez-ici</div>
+			</section>
+			<section class="my-3 border-bottom">
+				<p>En javascript, remplacez toutes les images ci-dessous par celle de votre choix.</p>
+				<div class="card-tip">
+					<p>
+						Utilisez document.querySelectorAll pour venir sélectionner toutes les images et stocker les dans une
+						variable (const).
+					</p>
+					<p>
+						Itérez sur chanque image (forEach) et venez modifier l'url de l'image actuelle par celle de votre choix
+						(src).
+					</p>
+				</div>
+				<div class="grid my-3">
+					<img
+						src="https://images.unsplash.com/photo-1655574283119-232a804c4ff6?q=80&w=1931&auto=format"
+						alt="cours de l'intendance"
+					/>
+					<img
+						src="https://images.unsplash.com/photo-1639409393516-7d43f23c7abb?q=80&w=2039&auto=format"
+						alt="rive droite"
+					/>
+					<img
+						src="https://images.unsplash.com/photo-1655574282152-f39e3a5925f3?q=80&w=1931&auto=format"
+						alt="grand théatre"
+					/>
+				</div>
+			</section>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
